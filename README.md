@@ -3,8 +3,6 @@
 [![Build Statu<br>s](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
 Git clone a repo into a folder and schedule a cron job to pull updates from the remote origin.<br>
-<br>
-<br>
 ## Installation<br>
 ```
 $ npm install git-pull-cron
@@ -46,6 +44,8 @@ to `git pull` updates.<br>
 <br>
 The current list of `CronJob` instances that have been setup through `init()`. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
+
+
 ## LICENSE
 <br>MIT - see LICENSE.md
 <br>
