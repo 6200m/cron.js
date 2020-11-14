@@ -42,7 +42,9 @@ to `git pull` updates.<br>
 
 ### .jobs
 <br>
-The current list of `CronJob` instances that have been setup through `init()`. <br>
+
+
+The current list of ``CronJob`` instances that have been setup through ``init()``. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
 
 
