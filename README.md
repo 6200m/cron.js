@@ -44,10 +44,10 @@ to `git pull` updates.<br>
   * `cronSpec` - The cron schedule spec, see [cron](https://www.npmjs.org/package/cron)
   * `updateCallback` - OPTIONAL. A callback `(err, commit)` which gets invoked for every update performed. The `commit` parameter is an instance of [`Commit` from gift](https://www.npmjs.org/package/gift).
 <br>
-<br>
-**Returns:** A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.<br>
-<br>
-### .jobs<br>
+
+**Returns:** A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.
+
+### .jobs
 <br>
 The current list of `CronJob` instances that have been setup through `init()`. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
