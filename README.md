@@ -12,7 +12,6 @@ bash
 $ npm install git-pull-cron
 ```
 ## Usage<br>
-<br>
 ```
 javascript
 var gitPullCron = require('git-pull-cron');
@@ -31,7 +30,6 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
   console.log('Updated to commit: ' + commit.id);
 });
 ```
-<br>
 ## API<br>
 <br>
 ### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)<br>
