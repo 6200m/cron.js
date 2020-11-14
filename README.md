@@ -7,7 +7,6 @@ Git clone a repo into a folder and schedule a cron job to pull updates from the 
 <br>
 ## Installation<br>
 ```
-bash
 $ npm install git-pull-cron
 ```
 ## Usage<br>
@@ -47,9 +46,6 @@ to `git pull` updates.<br>
 <br>
 The current list of `CronJob` instances that have been setup through `init()`. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
-<br>
-<br>
-## LICENSE<br>
-<br>
-MIT - see LICENSE.md<br>
+## LICENSE
+<br>MIT - see LICENSE.md
 <br>
