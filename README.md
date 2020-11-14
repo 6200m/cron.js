@@ -1,6 +1,4 @@
 # git-pull-cron<br>
-
-[![Build Status](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
 Then to test the functionality, run ``test.js`` to test it.<br>
 Then finally, choose the production script you want to run.<br>
@@ -49,8 +47,6 @@ to `git pull` updates.<br>
 **Returns:** A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.
 
 ### .jobs
-<br>
-
 The current list of ``CronJob`` instances that have been setup through ``init()``. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
 
