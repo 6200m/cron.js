@@ -1,7 +1,15 @@
 # git-pull-cron<br>
 
-[![Build Statu<br>s](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
+[![Build Status](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
+Then to test the functionality, run ``test.js`` to test it.<br>
+Then finally, choose the production script you want to run.<br>
+The current ones we have made:<br>
+```
+run.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
+---------------------------------------------------------------------------------------------------
+More coming soon!
+```
 Before that however, you will need to install the FS module as well.<br>
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.<br>
 ## Installation<br>
