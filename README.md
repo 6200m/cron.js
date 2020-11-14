@@ -49,5 +49,5 @@ This is useful in case you wish to modify or stop cron jobs.<br>
 
 
 ## LICENSE
-<br>MIT - see LICENSE.md
+MIT - see LICENSE.md
 <br>
