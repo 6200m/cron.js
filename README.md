@@ -4,11 +4,11 @@
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
 Git clone a repo into a folder and schedule a cron job to pull updates from the remote origin.<br>
 ## Installation<br>
-```
+```bash
 $ npm install git-pull-cron
 ```
 ## Usage<br>
-```
+```javascript
 var gitPullCron = require('git-pull-cron');
 
 /*
