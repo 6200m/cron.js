@@ -29,9 +29,7 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 });
 ```
 ## API<br>
-<br>
 ### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)
-<br>
 Clone remote Git repository to given local folder path and schedule a cron job <br>
 to `git pull` updates.<br>
 
