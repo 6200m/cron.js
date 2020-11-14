@@ -7,14 +7,14 @@ remote origin.<br>
 <br>
 <br>
 ## Installation<br>
-<br>
-```bash
+```
+bash
 $ npm install git-pull-cron
 ```
-<br>
 ## Usage<br>
 <br>
-```javascript
+```
+javascript
 var gitPullCron = require('git-pull-cron');
 
 /*
@@ -41,10 +41,10 @@ to `git pull` updates.<br>
 
 **Params:**<br>
 
-  * `gitRepoUrl` - URL to remote git repo, should be actionable by `git` command-line executable.<br>
-  * `localFolderPath` - Where the repository should be cloned to in the filesystem. Will get clobbered prior to cloning.<br>
-  * `cronSpec` - The cron schedule spec, see [cron](https://www.npmjs.org/package/cron)<br>
-  * `updateCallback` - OPTIONAL. A callback `(err, commit)` which gets invoked for every update performed. The `commit` parameter is an instance of [`Commit` from gift](https://www.npmjs.org/package/gift).<br>
+  * `gitRepoUrl` - URL to remote git repo, should be actionable by `git` command-line executable.
+  * `localFolderPath` - Where the repository should be cloned to in the filesystem. Will get clobbered prior to cloning.
+  * `cronSpec` - The cron schedule spec, see [cron](https://www.npmjs.org/package/cron)
+  * `updateCallback` - OPTIONAL. A callback `(err, commit)` which gets invoked for every update performed. The `commit` parameter is an instance of [`Commit` from gift](https://www.npmjs.org/package/gift).
 <br>
 <br>
 **Returns:** A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.<br>
