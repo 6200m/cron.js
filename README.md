@@ -11,7 +11,6 @@ $ npm install git-pull-cron
 ## Usage<br>
 ```javascript
 var gitPullCron = require('git-pull-cron');
-
 /*
 - Clone given repo into /dev/my-repo, replacing what's already there
 - Schedule cron to run every weekday (Mon-Fri) at 11:30am
@@ -44,10 +43,8 @@ to `git pull` updates.<br>
 ### .jobs
 <br>
 
-
 The current list of ``CronJob`` instances that have been setup through ``init()``. <br>
 This is useful in case you wish to modify or stop cron jobs.<br>
-
 
 ## LICENSE
 MIT - see LICENSE.md
