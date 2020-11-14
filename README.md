@@ -2,8 +2,7 @@
 
 [![Build Statu<br>s](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
-Git clone a repo into a folder and schedule a cron job to pull updates from the <br>
-remote origin.<br>
+Git clone a repo into a folder and schedule a cron job to pull updates from the remote origin.<br>
 <br>
 <br>
 ## Installation<br>
@@ -13,7 +12,6 @@ $ npm install git-pull-cron
 ```
 ## Usage<br>
 ```
-javascript
 var gitPullCron = require('git-pull-cron');
 
 /*
@@ -32,7 +30,7 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 ```
 ## API<br>
 <br>
-### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)<br>
+### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)
 <br>
 Clone remote Git repository to given local folder path and schedule a cron job <br>
 to `git pull` updates.<br>
