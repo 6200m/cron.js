@@ -2,6 +2,7 @@
 
 [![Build Statu<br>s](https://secure.travis-ci.org/hiddentao/git-pull-cron.png)](http://travis-ci.org/hiddentao/git-pull-cron)<br>
 For compiling WiiLink24's custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
+Before that however, you will need to install the FS module as well.<br>
 Git clone a repo into a folder and schedule a cron job to pull updates from the remote origin.<br>
 ## Installation<br>
 ```bash
