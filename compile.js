@@ -1,4 +1,3 @@
-
 var fs = require('fs');
 const contentmain0 = 'module.exports = (grunt) ->\n';
 const contentmain1 = '  require(\'matchdep\').filterDev(\'grunt-*\').forEach (contrib) ->\n';
