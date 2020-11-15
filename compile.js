@@ -34,11 +34,11 @@ const contentmisc1='    \"jshint\"\n';
 const contentmisc2='    \"mochaTest\"\n';
 const contentmisc3='  ]\n';
 const contentmisc4='  \n';
-const contentmisc5=contentmain0+contentmain1+contentmain2+contentmain3+contentmain4+contentmain5+contentmain6+contentmain7+contentmain8+contentmain9
-const contentmisc6=contentsecn0+contentsecn1+contentsecn2+contentsecn3+contentsecn4+contentsecn5+contentsecn6+contentsecn7+contentsecn8+contentsecn9
-const contentmisc7=contentothr0+contentothr1+contentothr2+contentothr3+contentothr4+contentothr5+contentothr6+contentothr7+contentothr8+contentothr9
-const contentmisc8=contentmisc0+contentmisc1+contentmisc2+contentmisc3+contentmisc4
-const contentmisc9=contentmisc5+contentmisc6+contentmisc7+contentmisc8 
+const contentmisc5=contentmain0+contentmain1+contentmain2+contentmain3+contentmain4+contentmain5+contentmain6+contentmain7+contentmain8+contentmain9;
+const contentmisc6=contentsecn0+contentsecn1+contentsecn2+contentsecn3+contentsecn4+contentsecn5+contentsecn6+contentsecn7+contentsecn8+contentsecn9;
+const contentmisc7=contentothr0+contentothr1+contentothr2+contentothr3+contentothr4+contentothr5+contentothr6+contentothr7+contentothr8+contentothr9;
+const contentmisc8=contentmisc0+contentmisc1+contentmisc2+contentmisc3+contentmisc4;
+const contentmisc9=contentmisc5+contentmisc6+contentmisc7+contentmisc8;
 fs.writeFile('Gruntfile.coffee', contentmisc9, function (err) {
   if (err) throw err;
   console.log('Compiled!');
