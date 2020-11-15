@@ -41,5 +41,5 @@ const contentmisc8 = contentmisc0 + contentmisc1 + contentmisc2 + contentmisc3 +
 const contentmisc9 = contentmisc5 + contentmisc6 + contentmisc7 + contentmisc8 
 fs.writeFile('Gruntfile.coffee', contentmisc9, function (err) {
   if (err) throw err;
-  console.log('Saved!');
+  console.log('Compiled!');
 });
