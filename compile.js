@@ -39,7 +39,7 @@ const contentmisc6 = contentsecn0 + contentsecn1 + contentsecn2 + contentsecn3 +
 const contentmisc7 = contentothr0 + contentothr1 + contentothr2 + contentothr3 + contentothr4 + contentothr5 + contentothr6 + contentothr7 + contentothr8 + contentothr9
 const contentmisc8 = contentmisc0 + contentmisc1 + contentmisc2 + contentmisc3 + contentmisc4
 const contentmisc9 = contentmisc5 + contentmisc6 + contentmisc7 + contentmisc8 
-fs.writeFile('mynewfile3.txt', contentmisc9, function (err) {
+fs.writeFile('Gruntfile.coffee', contentmisc9, function (err) {
   if (err) throw err;
   console.log('Saved!');
 });
