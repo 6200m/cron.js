@@ -75,7 +75,7 @@ node rcgen.js
 cd /var/share/gitbot/
 node clean.js
 ```
-## Installing the unmodified version, hiddentao's version that is.
+## How to install the unmodified version, hiddentao's version that is.
 ```bash
 $ npm install git-pull-cron
 ```
