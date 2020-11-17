@@ -9,7 +9,7 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will
 - Then ```finally```, ```choose``` the production ```script you want to run```.<br>
 - The ```current``` ones we have made:<br>
 # Current Scripts
-```
+```bash
 filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
 vulcan.js -- Vulcan schema updating script, which also saves WiiLink24 a lot of work with this particular one!
 roomserver.js -- Room Server updating script, which saves Spotlight the work of having to manually pull commits.
@@ -19,7 +19,7 @@ wiierd.js -- Wiierd error code system updating script, which saves Spotlight and
 More coming soon!
 ```
 # What does this do?
-```
+```bash
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
 # Great! How do I run it?
@@ -98,7 +98,7 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 ```
 ## API<br>
 ### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)
-```
+```bash
 Clone remote Git repository to given local folder path and schedule a cron job
 to `git pull` updates.
 ```
@@ -112,10 +112,10 @@ to `git pull` updates.
 A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.<br>
 ### .jobs
 The current list of ``CronJob`` instances that have been setup through ``init()``
-```
+```bash
 This is useful in case you wish to modify or stop cron jobs.
 ```
 ## LICENSE
-```
+```bash
 MIT - see LICENSE.md
 ```
