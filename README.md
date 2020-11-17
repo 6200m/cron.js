@@ -76,7 +76,7 @@ node generate.js
 node packagegen.js
 node rcgen.js
 ```
-```To``` ```remove unneeded files``` ```and``` ```free up a bit of space```, do:```
+```To``` ```remove``` ```unneeded``` ```files``` ```and``` ```free``` ```up``` ```a``` ```bit``` ```of``` ```space```, do:```
 ```bash
 cd /var/share/gitbot/
 node clean.js
@@ -105,7 +105,7 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 ## API<br>
 ### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)
 ```bash
-Clone remote Git repository to given local folder path and schedule a cron job
+Clones remote Git repository to given local folder path and schedule a cron job
 to `git pull` updates.
 ```
 **Params:**
