@@ -10,6 +10,7 @@ The ```current``` ones we have made:<br>
 ```
 filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
 vulcan.js -- Vulcan schema updating script, which also saves WiiLink24 a lot of work with this particular one!
+roomserver.js -- Room Server updating script, which saves Spotlight the work of having to manually pull commits.
 ---------------------------------------------------------------------------------------------------
 More coming soon!
 ```
