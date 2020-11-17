@@ -7,7 +7,7 @@ setTimeout(function() {
     try {
       if (fs.existsSync(path0)) {
         //file exists
-        fs.unlinkSync(path3)
+        fs.unlinkSync(path0)
       }
     } catch(err) {
       console.error(err)
@@ -17,7 +17,7 @@ setTimeout(function() {
     try {
       if (fs.existsSync(path1)) {
         //file exists
-        fs.unlinkSync(path3)
+        fs.unlinkSync(path1)
       }
     } catch(err) {
       console.error(err)
@@ -27,7 +27,7 @@ setTimeout(function() {
     try {
       if (fs.existsSync(path2)) {
         //file exists
-        fs.unlinkSync(path3)
+        fs.unlinkSync(path2)
       }
     } catch(err) {
       console.error(err)
