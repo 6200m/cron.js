@@ -22,6 +22,59 @@ More coming soon!
 ```
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
+# Great! How do I run it?
+```To run filemaker updater, do:```
+```
+cd /var/share/gitbot/
+mkdir /var/share/engine/
+node filemaker.js
+```
+```To run vulcan updater, do:```
+```
+cd /var/share/gitbot/
+mkdir /var/schemas/vulcan/
+node vulcan.js
+```
+```To run roomserver updater, do:```
+```
+cd /var/share/gitbot/
+mkdir /var/share/roomserver/
+node roomserver.js
+```
+```To run wiierd updater, do:```
+```
+cd /var/share/gitbot/
+mkdir /var/share/wiierd/
+node wiierd.js
+```
+```To run the updater for this repo, do:```
+```
+cd /var/share/gitbot/
+mkdir /var/share/wiinoma/
+node wiinoma.js
+```
+```To setup the enviroment, do:```
+```
+mkdir /var/
+cd var
+mkdir /var/share/
+mkdir /var/schemas/
+cd schemas
+cd ../
+cd share
+mkdir gitbot
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
+cd gitbot
+node compile.js
+node generate.js
+node packagegen.js
+node rcgen.js
+```
+```To remove unneeded files and free up a bit of space, do:```
+```
+cd /var/share/gitbot/
+node clean.js
+```
 ## Installation<br>
 ```bash
 $ npm install git-pull-cron
