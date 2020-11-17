@@ -2,7 +2,7 @@
 For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module``` ```and``` then ```do``` ```the``` ```following```:<br>
 - ```Firstly```, ```run``` ```compile.js``` firstly ```to``` ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
 - ```Secondly```, ```run``` ```generate.js``` ```to``` ```generate``` the ```.npmignore``` ```file```.<br>
-- ```Thirdly```, ```run``` ```rcgen.js``````to``` ```generate``` the ```.jshintrc``` ```file```.<br>
+- ```Thirdly```, ```run``` ```rcgen.js``` ```to``` ```generate``` the ```.jshintrc``` ```file```.<br>
 - ```Fourthly```, ```run``` ```packagegen.js``` ```to``` ```generate``` the ```package.json``` ```file```.<br>
 - ```Fifthly```, ```run``` ```clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your installation ```up```.<br>
 - Then to ```test``` ```the``` ```functionality```, ```run``` ``test.js`` to ```test``` ```it```.<br>
