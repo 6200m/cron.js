@@ -29,31 +29,31 @@ cd /var/share/gitbot/
 mkdir /var/share/engine/
 node filemaker.js
 ```
-```To run vulcan updater, do:```
+```To``` ```run``` ```vulcan``` ```updater```, do:
 ```
 cd /var/share/gitbot/
 mkdir /var/schemas/vulcan/
 node vulcan.js
 ```
-```To run roomserver updater, do:```
+```To``` ```run``` ```roomserver``` ```updater```, do:
 ```
 cd /var/share/gitbot/
 mkdir /var/share/roomserver/
 node roomserver.js
 ```
-```To run wiierd updater, do:```
+```To``` ```run``` ```wiierd``` ```updater```, do:
 ```
 cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
 ```
-```To run the updater for this repo, do:```
+```To``` ```run``` ```Wii No Ma production code updater```, do:
 ```
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
 ```
-```To setup the enviroment, do:```
+```To``` ```setup``` the ```enviroment```, do:
 ```
 mkdir /var/
 cd var
