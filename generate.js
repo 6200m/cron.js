@@ -1,8 +1,8 @@
 var fs=require('fs');
-const data0 = "node_modules/"
-const data1 = "test/"
-const data2 = ".travis.yml"
-const data3 = ".jshintrc"
+const data0 = "node_modules/\n"
+const data1 = "test/\n"
+const data2 = ".travis.yml\n"
+const data3 = ".jshintrc\n"
 const data4 = "Gruntfile.coffee"
 const data5 = data0 + data1
 const data6 = data2 + data3
