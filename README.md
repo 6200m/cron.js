@@ -127,7 +127,7 @@ This is useful in case you wish to modify or stop cron jobs.
 MIT - see LICENSE.md
 ```
 # Nah, I wanna see the license without going to another file.
-```Ok```, ```here``` ```you``` ```go```! :)
+```Ok```, ```here``` ```you``` ```go```.
 ```bash
 Copyright (c) [Ramesh Nair](http://www.hiddentao.com/) and contributors
 Permission is hereby granted, free of charge, to any person
