@@ -83,7 +83,8 @@ node clean.js
 ```
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
-$ npm install git-pull-cron
+bash
+clear&&npm install git-pull-cron
 ```
 ## Usage
 ```javascript
