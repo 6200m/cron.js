@@ -1,3 +1,4 @@
+var fs=require('fs');
 const data0 = "node_modules/"
 const data1 = "test/"
 const data2 = ".travis.yml"
