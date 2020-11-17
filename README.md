@@ -70,7 +70,7 @@ node generate.js
 node packagegen.js
 node rcgen.js
 ```
-```To remove unneeded files and free up a bit of space, do:```
+```To``` ```remove unneeded files``` ```and``` ```free up a bit of space```, do:```
 ```
 cd /var/share/gitbot/
 node clean.js
