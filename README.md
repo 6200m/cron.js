@@ -1,5 +1,5 @@
 # git-pull-cron<br>
-For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module``` and then ```do``` ```the``` ```following```:<br>
+For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module``` ```and``` then ```do``` ```the``` ```following```:<br>
 - ```Firstly```, ```run``` ```compile.js``` ```firstly``` to ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
 - ```Secondly```, ```run``` ```generate.js``` to ```generate``` the ```.npmignore``` ```file```.<br>
 - ```Thirdly```, ```run``` ```rcgen.js``` to ```generate``` the ```.jshintrc``` ```file```.<br>
