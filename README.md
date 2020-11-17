@@ -3,7 +3,7 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will
 ```Secondly```, ```run``` ```generate.js``` to ```generate``` the ```.npmignore``` ```file```.<br>
 ```Thirdly```, ```run``` ```rcgen.js``` to ```generate``` the ```.jshintrc``` ```file```.<br>
 ```Fourthly```, ```run``` ```packagegen.js``` to ```generate``` the ```package.json``` ```file```.<br>
-```Fifthly```, ```run``` ```clean.js``` to ```remove``` the ```.gitignore``` ```file``` ```to``` ```clean``` your installation ```up```.<br>
+```Fifthly```, ```run``` ```clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your installation ```up```.<br>
 Then to ```test``` ```the``` ```functionality```, run ``test.js`` to ```test``` ```it```.<br>
 Then ```finally```, choose the production script you want to ```run```.<br>
 The ```current``` ones we have made:<br>
