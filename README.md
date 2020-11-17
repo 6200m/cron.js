@@ -47,7 +47,7 @@ cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
 ```
-```To``` ```run``` ```Wii No Ma production code updater```, do:
+```To``` ```run``` ```Wii``` ```No``` ```Ma``` ```production``` ```code``` ```updater```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
