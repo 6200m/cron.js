@@ -58,6 +58,7 @@ cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
 ```
+# Enviroment Runtime Setup Docs
 ```To``` ```setup``` the ```enviroment```, do:
 ```bash
 mkdir /var/
