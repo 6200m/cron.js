@@ -9,6 +9,7 @@ The ```current``` ones we have made:<br>
 # Current Scripts
 ```
 filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
+vulcan.js -- Vulcan schema updating script, which also saves WiiLink24 a lot of work with this particular one!
 ---------------------------------------------------------------------------------------------------
 More coming soon!
 ```
