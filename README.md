@@ -49,13 +49,13 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 Clone remote Git repository to given local folder path and schedule a cron job
 to `git pull` updates.
 ```
-**Params:**<br>
-
+**Params:**
   * `gitRepoUrl` - URL to remote git repo, should be actionable by `git` command-line executable.
   * `localFolderPath` - Where the repository should be cloned to in the filesystem. Will get clobbered prior to cloning.
   * `cronSpec` - The cron schedule spec, see [cron](https://www.npmjs.org/package/cron)
   * `updateCallback` - OPTIONAL. A callback `(err, commit)` which gets invoked for every update performed. The `commit` parameter is an instance of [`Commit` from gift](https://www.npmjs.org/package/gift).
-**Returns:**<br>
+
+**Returns:**
 A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.<br>
 ### .jobs
 ```
