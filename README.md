@@ -23,38 +23,38 @@ More coming soon!
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
 # Great! How do I run it?
-```To``` ```run``` ```filemaker``` ```updater```, do:```
-```
+```To``` ```run``` ```filemaker``` ```updater```, do:
+```bash
 cd /var/share/gitbot/
 mkdir /var/share/engine/
 node filemaker.js
 ```
 ```To``` ```run``` ```vulcan``` ```updater```, do:
-```
+```bash
 cd /var/share/gitbot/
 mkdir /var/schemas/vulcan/
 node vulcan.js
 ```
 ```To``` ```run``` ```roomserver``` ```updater```, do:
-```
+```bash
 cd /var/share/gitbot/
 mkdir /var/share/roomserver/
 node roomserver.js
 ```
 ```To``` ```run``` ```wiierd``` ```updater```, do:
-```
+```bash
 cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
 ```
 ```To``` ```run``` ```Wii No Ma production code updater```, do:
-```
+```bash
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
 ```
 ```To``` ```setup``` the ```enviroment```, do:
-```
+```bash
 mkdir /var/
 cd var
 mkdir /var/share/
@@ -71,7 +71,7 @@ node packagegen.js
 node rcgen.js
 ```
 ```To``` ```remove unneeded files``` ```and``` ```free up a bit of space```, do:```
-```
+```bash
 cd /var/share/gitbot/
 node clean.js
 ```
