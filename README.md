@@ -111,8 +111,8 @@ to `git pull` updates.
 **Returns:**
 A `Promise` which resolves to the [`CronJob`](https://www.npmjs.org/package/cron) instance.<br>
 ### .jobs
-```
 The current list of ``CronJob`` instances that have been setup through ``init()``
+```
 This is useful in case you wish to modify or stop cron jobs.
 ```
 ## LICENSE
