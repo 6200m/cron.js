@@ -1,5 +1,6 @@
 # git-pull-cron<br>
-For compiling ``WiiLink24's`` custom version, you will need to run ```compile.js``` firstly to generate the gruntfile.<br>
+For compiling ``WiiLink24's`` custom version, you will need to run ```compile.js``` firstly to generate the ``Gruntfile.coffee`` file.<br>
+Secondly, run ``genignore.js`` to generate the ``.npmignore`` file.<br>
 Then to test the functionality, run ``test.js`` to test it.<br>
 Then finally, choose the production script you want to run.<br>
 The current ones we have made:<br>
