@@ -23,7 +23,7 @@ More coming soon!
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
 # Great! How do I run it?
-```To run filemaker updater, do:```
+```To``` ```run``` ```filemaker``` ```updater```, do:```
 ```
 cd /var/share/gitbot/
 mkdir /var/share/engine/
