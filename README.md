@@ -75,11 +75,11 @@ node rcgen.js
 cd /var/share/gitbot/
 node clean.js
 ```
-## Installation<br>
+## Installation
 ```bash
 $ npm install git-pull-cron
 ```
-## Usage<br>
+## Usage
 ```javascript
 var gitPullCron = require('git-pull-cron');
 /*
