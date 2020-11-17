@@ -3,13 +3,15 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, you will need 
 ```Secondly```, ```run``` ```genignore.js``` to ```generate``` the ```.npmignore``` ```file```.<br>
 ```Thirdly```, ```run``` ```rcgen.js``` to ```generate``` the ```.jshintrc``` ```file```.<br>
 Then to ```test``` ```the``` ```functionality```, run ``test.js`` to ```test``` ```it```.<br>
-Then ```finally```, choose the production script you want to run.<br>
+Then ```finally```, choose the production script you want to ```run```.<br>
 The ```current``` ones we have made:<br>
+# Current Scripts
 ```
-run.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
+filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
 ---------------------------------------------------------------------------------------------------
 More coming soon!
 ```
+# What does this do?
 ```
 This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
