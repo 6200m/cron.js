@@ -7,7 +7,7 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will
 - ```Fifthly```, ```run``` ```clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your installation ```up```.<br>
 - Then to ```test``` ```the``` ```functionality```, ```run``` ``test.js`` to ```test``` ```it```.<br>
 - Then ```finally```, ```choose``` the production ```script you want to run```.<br>
-- The ```current``` ones we have made:<br>
+- The ```current``` ```ones``` ```we``` have ```made```:<br>
 # Current Scripts
 ```bash
 filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work with this particular one!
