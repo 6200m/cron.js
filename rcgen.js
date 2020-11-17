@@ -1,3 +1,4 @@
+var fs=require('fs');
 const data00 = "{\n"
 const data01 = "    // Settings\n"
 const data02 = "    " + "\"passfail\"" + "      : false,  // Stop on first error.\n"
