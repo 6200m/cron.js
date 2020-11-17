@@ -6,7 +6,7 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will
 - ```Fourthly```, ```run``` ```packagegen.js``` to ```generate``` the ```package.json``` ```file```.<br>
 - ```Fifthly```, ```run``` ```clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your installation ```up```.<br>
 - Then to ```test``` ```the``` ```functionality```, ```run``` ``test.js`` to ```test``` ```it```.<br>
-- Then ```finally```, choose the production script you want to ```run```.<br>
+- Then ```finally```, ```choose``` the production ```script you want to run```.<br>
 - The ```current``` ones we have made:<br>
 # Current Scripts
 ```
