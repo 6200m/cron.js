@@ -96,7 +96,7 @@ Ok, ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blo
 bash
 clear&&npm install git-pull-cron
 ```
-## Usage
+## Usage of Unmodified Version
 ```javascript
 var gitPullCron = require('git-pull-cron');
 /*
@@ -113,11 +113,28 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
   console.log('Updated to commit: ' + commit.id);
 });
 ```
+## Usage of Modified Version
+```javascript
+var gitPullCron = require('git-pull-cron-mod');
+/*
+- Clone given repo into /dev/my-repo, replacing what's already there
+- Schedule cron to run every weekday (Mon-Fri) at 11:30am
+- When cron task runs, a `git pull origin master` will be performed
+- Once cron task has run the callback will get invoked with latest commit info
+ */
+gitPullCron.init('git://my-domain.com/my-repo.git','/dev/my-repo','00 30 11 * * 1-5', function(err,commit) {
+  if (err) {
+    return console.error(err.stack);
+  }
+
+  console.log('Updated to commit: '+commit.id);
+});
+```
 ## Indvidual Category Setup Guides
 #### I want to setup the TwitchPlaysPokemon category and that category only.
 I get the feeling! Please ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-twitchplayspokemon-stuff-only) to view the documentation on how to setup the TwitchPlaysPokemon category you want and that category only.
 #### I want to setup the WiiLink24 category and that category only.
-I get the feeling! Please ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiConnect24 category you want and that category only.
+I get the feeling! Please ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiLink24 category you want and that category only.
 #### I want to setup the WiiConnect24 category and that category only.
 I get the feeling! Please ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-wanna-setup-wiiconnect24-stuff-only) to view the documentation on how to setup the WiiConnect24 category you want and that category only.
 ## API<br>
