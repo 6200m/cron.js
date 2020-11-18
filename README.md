@@ -14,9 +14,9 @@ filemaker.js -- File-Maker updating script, which saves WiiLink24 a lot of work 
 vulcan.js -- Vulcan schema updating script, which also saves WiiLink24 a lot of work with this particular one!
 roomserver.js -- Room Server updating script, which saves Spotlight the work of having to manually pull commits.
 wiinoma.js -- Wii No Ma compose repo updating script, which saves Spotlight the work of having to manually pull commits.
+pbrupdater.js -- PBR Engine 2.0 updating script, which saves my buddies over at TPP the work of having to manually pull commits.
+tppcore.js -- TPP Core updating script, which saves my buddies over at TPP the work of having to manually pull commits.
 wiierd.js -- Wiierd error code system updating script, which saves Spotlight and WiiLink24 the work of having to manually pull commits.
----------------------------------------------------------------------------------------------------
-More coming soon!
 ```
 # What does this do?
 ```bash
