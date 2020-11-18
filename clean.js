@@ -1,8 +1,8 @@
 const fs = require('fs')
-const path0 = '.gitignore'
-const path1 = 'README.md'
-const path2 = 'LICENSE.md'
-const path3 = '.replit'
+const path0='.gitignore'
+const path1='README.md'
+const path2='LICENSE.md'
+const path3='.replit'
 try {
         if (fs.existsSync(path0)) {
                 //file exists
@@ -27,11 +27,4 @@ try {
 } catch(err) {
         console.error(err)
 }
-try {
-      if (fs.existsSync(path3)) {
-                //file exists
-                fs.unlinkSync(path3)
-      }
-} catch(err) {
-        console.error(err)
-}
+try{if (fs.existsSync(path3)){fs.unlinkSync(path3);}}catch(err){console.error(err)}
