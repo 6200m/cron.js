@@ -80,10 +80,10 @@ mkdir /var/
 cd var
 mkdir /var/share/
 mkdir /var/schemas/
-mkdir /var/othr/
-mkdir /var/othr/tpp
-mkdir /var/othr/tpp/0
-mkdir /var/othr/tpp/1
+mkdir /var/other/
+mkdir /var/other/tpp
+mkdir /var/other/tpp/0
+mkdir /var/other/tpp/1
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
