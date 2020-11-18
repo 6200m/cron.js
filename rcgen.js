@@ -1,5 +1,4 @@
-const fs=require('fs');
-const data01 = "{\n    // Settings\n    " + "\"passfail\"" + "      : false,  // Stop on first error.\n"
+const fs=require('fs'); const data01 = "{\n    // Settings\n    " + "\"passfail\"" + "      : false,  // Stop on first error.\n"
 const data02 = "    " + "\"maxerr\"" + "        : 100,    // Maximum error before stopping.\n"
 const data03 = "    " + "\"browser\"" + "       : false,  // Standard browser globals e.g. `window`, `document`.\n"
 const data04 = "    " + "\"node\"" + "          : true,\n"
@@ -58,7 +57,4 @@ const data56 = data53 + data54
 const data57 = data54 + data55
 const data58 = data57 + data56
 const data59 = ".jshintrc"
-fs.writeFile(data59, data58, function (err) {
-  if (err) throw err;
-  console.log(data59 + " file... generated!");
-});
+fs.writeFile(data59, data58, function (err){if (err) throw err; console.log(data59 + " file... generated!");});
