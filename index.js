@@ -1,5 +1,5 @@
 "use strict";
-const debug=require('debug')('git-pull-cron'),
+const debug=require('debug')('git-pull-cron-mod'),
   git=require('gift'),
   CronJob=require('cron').CronJob,
   Q=require('bluebird'),
