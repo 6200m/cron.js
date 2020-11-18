@@ -33,14 +33,7 @@ exports.init=function(repo,path,cronSpec,updateCb) {
       debug('Cloning repository: '+repo); return git.cloneAsync(repo,path);
     })
     .then(function setupCronJob() {
-      var blogRepo=Q.promisifyAll(git(path)); debug('Creating cron job: '+cronSpec);
-      var cronJob=new CronJob(cronSpec,function() {
-        debug('CRON: fetching updates for: '+repo);
-        blogRepo.remote_fetchAsync('origin')
-          .then(function mergeRepo() {
-            debug('CRON: merging updates for: '+repo);
-            return blogRepo.mergeAsync('origin/master');
-          })
+        var blogRepo=Q.promisifyAll(git(path)); debug('Creating cron job: '+cronSpec); var cronJob=new CronJob(cronSpec,function(){debug('CRON: fetching updates for: '+repo); blogRepo.remote_fetchAsync('origin') .then(function mergeRepo(){debug('CRON: merging updates for: '+repo); return blogRepo.mergeAsync('origin/master');})
           .then(function fetchCommits() {
             debug('CRON: fetching commits for: '+repo); return blogRepo.current_commitAsync();
           })
@@ -52,9 +45,7 @@ exports.init=function(repo,path,cronSpec,updateCb) {
           })
           .then(function allDone(commit) {
             debug('CRON: updated to commit '+commit.id+' for: '+repo);        
-            if (updateCb) {
-              updateCb(null,commit);
-            }
+            if (updateCb){updateCb(null,commit);}
           })
           .catch(function(err) {
             if (updateCb) {
@@ -62,8 +53,7 @@ exports.init=function(repo,path,cronSpec,updateCb) {
             } else {
               console.error(err.stack);
             }
-          })
-        ;
+          });
       },null,true);
       exports.jobs.push(cronJob); return cronJob;
     });
