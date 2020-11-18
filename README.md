@@ -1,4 +1,5 @@
 # cron.js<br>
+# How to Compile<br>
 For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module```, ```follow``` the ```enviroment``` ```setup``` ```guide``` ```inside``` this ```README``` ```by``` ```clicking``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#enviroment-runtime-setup-docs) ```and``` then ```do``` ```the``` ```following```:<br>
 - ```Firstly```, ```run``` ```node compile.js``` firstly ```to``` ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
 - ```Secondly```, ```run``` ```node generate.js``` ```to``` ```generate``` the ```.npmignore``` ```file```.<br>
