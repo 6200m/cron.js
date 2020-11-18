@@ -63,14 +63,12 @@ node wiinoma.js
 ```To``` ```run``` ```PBREngine``` 2.0 ```Updater```, do:
 ```bash
 cd /var/other/tpp/0
-mkdir /var/other/tpp/0
 node pbrupdater.js
 ```
 # tppcore.js Runtime Docs
 ```To``` ```run``` ```TPP``` ```Core``` ```Updater```, do:
 ```bash
 cd /var/other/tpp/1
-mkdir /var/other/tpp/1
 node tppcore.js
 ```
 # Enviroment Runtime Setup Docs
@@ -80,8 +78,10 @@ mkdir /var/
 cd var
 mkdir /var/share/
 mkdir /var/schemas/
-cd schemas
-cd ../
+mkdir /var/othr/
+mkdir /var/othr/tpp
+mkdir /var/othr/tpp/0
+mkdir /var/othr/tpp/1
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
