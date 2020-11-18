@@ -63,12 +63,14 @@ node wiinoma.js
 ```To``` ```run``` ```PBREngine``` 2.0 ```Updater```, do:
 ```bash
 cd /var/other/tpp/0
+mkdir /var/other/tpp/0/data
 node pbrupdater.js
 ```
 # tppcore.js Runtime Docs
 ```To``` ```run``` ```TPP``` ```Core``` ```Updater```, do:
 ```bash
 cd /var/other/tpp/1
+mkdir /var/other/tpp/1/data
 node tppcore.js
 ```
 # Enviroment Runtime Setup Docs
