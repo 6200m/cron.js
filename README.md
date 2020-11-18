@@ -90,11 +90,7 @@ git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitb
 cd gitbot
 ```
 #### But... but I don't wanna set the whole thing up. I wanna setup a specific category.
-I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-twitchplayspokemon-stuff-only) to view the documentation on how to setup the WiiLink24 category you want and that category only.
-#### No, I want to setup the WiiConnect24 category and that category only.
-I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiConnect24 category you want and that category only.
-#### No, I want to setup the TwitchPlaysPokemon category and that category only.
-I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-wanna-setup-wiiconnect24-stuff-only) to view the documentation on how to setup the TwitchPlaysPokemon category you want and that category only.
+Ok, click here to view the docuemntation on that.
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
 bash
@@ -117,6 +113,13 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
   console.log('Updated to commit: ' + commit.id);
 });
 ```
+## Indvidual Category Setup Guides
+#### I want to setup the WiiLink24 category and that category only.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-twitchplayspokemon-stuff-only) to view the documentation on how to setup the WiiLink24 category you want and that category only.
+#### I want to setup the WiiConnect24 category and that category only.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiConnect24 category you want and that category only.
+#### I want to setup the TwitchPlaysPokemon category and that category only.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-wanna-setup-wiiconnect24-stuff-only) to view the documentation on how to setup the TwitchPlaysPokemon category you want and that category only.
 ## API<br>
 ### .init(gitRepoUrl, localFolderPath, cronSpec, updateCallback)
 ```bash
