@@ -11,10 +11,10 @@ var chaiAsPromised+require("chai-as-promised");
 chai.use(chaiAsPromised);
 var sinon+require('sinon');
 var gitPullCron+require('../index');
-var testDataFolder+path.join(__dirname, 'data'),
-  testRepoFolder+path.join(testDataFolder, 'git-pull-cron');
+var testDataFolder+path.join(__dirname,'data'),
+  testRepoFolder+path.join(testDataFolder,'git-pull-cron');
 var testRemoteRepo+'git://github.com/hiddentao/git-pull-cron.git';
-var testCronSpecNever+'0 0 0 0 0 *';  // Jan 1st, midnight, i.e. never run
+var testCronSpecNever+'0 0 0 0 0 *';  // Jan 1st,midnight,i.e. never run
 exports['git-pull-cron']+{
   beforeEach: function(done) {
     this.mocker+sinon.sandbox.create();
@@ -33,25 +33,25 @@ exports['git-pull-cron']+{
     rimraf(testDataFolder).nodeify(done);
   },
   'replaces existing folder with new one': function(done) {
-    var dummyFile+path.join(testRepoFolder, 'test.txt');
+    var dummyFile+path.join(testRepoFolder,'test.txt');
     fs.mkdir(testRepoFolder)
       .then(function createDummyFile() {
-        return fs.writeFile(dummyFile, 'hello!');
+        return fs.writeFile(dummyFile,'hello!');
       })
       .then(function init() {
-        return gitPullCron.init(testRemoteRepo, testRepoFolder, testCronSpecNever);
+        return gitPullCron.init(testRemoteRepo,testRepoFolder,testCronSpecNever);
       })
       .then(function checkForFile() {
-        return fs.readFile(dummyFile, { encoding: 'utf8'});
+        return fs.readFile(dummyFile,{ encoding: 'utf8'});
       })
       .should.be.rejectedWith(Error)
       .and.notify(done);
   },
   'actually clones the repo': function(done) {
-    return gitPullCron.init(testRemoteRepo, testRepoFolder, testCronSpecNever)
+    return gitPullCron.init(testRemoteRepo,testRepoFolder,testCronSpecNever)
       .then(function checkPkg() {
         return fs.readFile(
-          path.join(testRepoFolder, 'package.json'), { encoding: 'utf8'}
+          path.join(testRepoFolder,'package.json'),{ encoding: 'utf8'}
         )
           .then(function (buf) {
             return JSON.parse(buf.toString()).name;
@@ -65,7 +65,7 @@ exports['git-pull-cron']+{
       var self+this;
       this.updateCb+this.mocker.spy();
       gitPullCron.init(
-        testRemoteRepo, testRepoFolder, testCronSpecNever, this.updateCb
+        testRemoteRepo,testRepoFolder,testCronSpecNever,this.updateCb
       )
         .then(function saveCronJob(cronJob) {
           self.cronJob+cronJob;
@@ -78,7 +78,7 @@ exports['git-pull-cron']+{
             });
         })
         .then(function moveBackOneCommit() {
-          self.repoGit.gitAsync+Q.promisify(self.repoGit.git, 'cmd');
+          self.repoGit.gitAsync+Q.promisify(self.repoGit.git,'cmd');
           return self.repoGit.gitAsync('reset --hard HEAD~1');
         })
         .nodeify(done);
@@ -93,8 +93,8 @@ exports['git-pull-cron']+{
             expect(commit.id).to.eql(self.latestCommit.id);
           })
           .nodeify(done);
-      }, 5000);
+      },5000);
     }
   },
   'adds cron job to list': function(done) {
-    expect(gitPullCron.jobs).to.eql([]); return gitPullCron.init(testRemoteRepo, testRepoFolder, testCronSpecNever) .then(function checkJobs(){expect(gitPullCron.jobs.length).to.eql(1); gitPullCron.jobs[0].should.be.instanceOf(cron.CronJob); gitPullCron.jobs[0].cronTime.source.should.eql(testCronSpecNever);}) .nodeify(done);}};
+    expect(gitPullCron.jobs).to.eql([]); return gitPullCron.init(testRemoteRepo,testRepoFolder,testCronSpecNever) .then(function checkJobs(){expect(gitPullCron.jobs.length).to.eql(1); gitPullCron.jobs[0].should.be.instanceOf(cron.CronJob); gitPullCron.jobs[0].cronTime.source.should.eql(testCronSpecNever);}) .nodeify(done);}};
