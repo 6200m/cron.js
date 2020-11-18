@@ -89,7 +89,7 @@ mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
 ```
-# But... but I don't wanna set all of it up.
+# But... but I don't wanna set the whole thing up. I wanna setup a specific category.
 I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-twitchplayspokemon-stuff-only) to view the documentation on how to setup the WiiLink24 category you want.
 #### No, I want to setup the WiiConnect24 category and that category only.
 I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiConnect24 category you want.
