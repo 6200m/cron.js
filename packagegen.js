@@ -1,4 +1,4 @@
-var fs=require('fs');
+const fs=require('fs');
 const data00 = " {\n"
 const data01 = "    " + "\"name\": " + "\"git-pull-cron-mod\",\n"
 const data02 = "    " + "\"version\": " + "\"1.0.0\",\n"
@@ -18,9 +18,9 @@ const data15 = "    ],\n"
 const data16 = "   " + "\"author\": " + "\"Ramesh Nair <ram@hiddentao.com> & Mod by 6100m\",\n"
 const data17 = "   " + "\"license\": " + "\"MIT\",\n"
 const data18 = "   " + "\"bugs\"" + ": {\n"
-const data19 = "     " + "\"url\": " + "\"https://github.com/WiiLink24-Extensions/cron.jsissues\"" + "\n"
+const data19 = "     " + "\"url\": " + "\"https://github.com/WiiLink24-Extensions/cron.js/issues\"" + "\n"
 const data20 = "   },\n"
-const data21 = "   " + "\"homepage\": " + "\"https://github.com/WiiLink24-Extensions/cron.js",\n"
+const data21 = "   " + "\"homepage\": " + "\"https://github.com/WiiLink24-Extensions/cron.js\"" + ",\n"
 const data22 = "   " + "\"dependencies\"" + ": {\n"
 const data23 = "     " + "\"debug\": " + "\"~4.1.1\",\n"
 const data24 = "     " + "\"rimraf\": " + "\"~2.2.8\",\n"
