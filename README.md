@@ -124,17 +124,13 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 ## Usage of Modified Version
 ```javascript
 var gitPullCron = require('git-pull-cron-mod');
-/*
-- Clone given repo into /dev/my-repo, replacing what's already there
-- Schedule cron to run every weekday (Mon-Fri) at 11:30am
-- When cron task runs, a `git pull origin master` will be performed
-- Once cron task has run the callback will get invoked with latest commit info
- */
+/* Original example code by hiddentao */
+/* Example was modified by 6100m */
+/* Schedules cron to run every weekday (Mon-Fri) at 11:30am */
 gitPullCron.init('git://my-domain.com/my-repo.git','/dev/my-repo','00 30 11 * * 1-5', function(err,commit) {
   if (err) {
     return console.error(err.stack);
   }
-
   console.log('Updated to commit: '+commit.id);
 });
 ```
