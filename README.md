@@ -90,7 +90,11 @@ git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitb
 cd gitbot
 ```
 # But... but I don't wanna set all of it up.
-I get the feeling! Please click [here](https://www.npmjs.org/package/gift) to view the documentation on how to setup the one main category you want.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-twitchplayspokemon-stuff-only) to view the documentation on how to setup the WiiLink24 category you want.
+#### No, I want to setup the WiiConnect24 category and that category only.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-want-to-setup-wiilink24-stuff-only) to view the documentation on how to setup the WiiLink24 category you want.
+#### No, I want to setup the TwitchPlaysPokemon category and that category only.
+I get the feeling! Please click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#i-wanna-setup-wiiconnect24-stuff-only) to view the documentation on how to setup the WiiLink24 category you want.
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
 bash
@@ -226,3 +230,4 @@ cd /var/share/engine/
 node filemaker.js
 cd ../
 ```
+### Then, it's up to you what to do next.<br><br>
