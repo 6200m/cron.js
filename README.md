@@ -1,5 +1,5 @@
 # cron.js<br>
-For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module``` ```and``` then ```do``` ```the``` ```following```:<br>
+For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module```, ```follow``` the ```enviroment``` ```setup``` ```guide``` ```inside``` this ```README``` ```and``` then ```do``` ```the``` ```following```:<br>
 - ```Firstly```, ```run``` ```node compile.js``` firstly ```to``` ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
 - ```Secondly```, ```run``` ```node generate.js``` ```to``` ```generate``` the ```.npmignore``` ```file```.<br>
 - ```Thirdly```, ```run``` ```node rcgen.js``` ```to``` ```generate``` the ```.jshintrc``` ```file```.<br>
