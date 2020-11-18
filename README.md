@@ -5,6 +5,7 @@ For ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will
 - ```Thirdly```, ```run``` ```rcgen.js``` ```to``` ```generate``` the ```.jshintrc``` ```file```.<br>
 - ```Fourthly```, ```run``` ```packagegen.js``` ```to``` ```generate``` the ```package.json``` ```file```.<br>
 - ```Fifthly```, ```run``` ```clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your installation ```up```.<br>
+- ```Sixthly```,```run``` ```npm install``` to ```install``` this ```module```.<br>
 - Then to ```test``` ```the``` ```functionality```, ```run``` ``test.js`` ```to``` ```test``` it.<br>
 - Then ```finally```, ```choose``` the production ```script you want to run```.<br>
 - The ```current``` ```ones``` ```we``` have ```made```:<br>
