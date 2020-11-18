@@ -37,4 +37,4 @@ const data35 = data30 + data31
 const data36 = data32 + data33
 const data37 = data34 + data35
 const data38 = data36 + data37
-const data39="package.json";fs.writeFile(data39, data38, function (err){if (err) throw err; console.log(data39 + " file... generated!);});
+const data39="package.json";fs.writeFile(data39, data38, function (err){if (err) throw err; console.log(data39 + " file... generated!");});
