@@ -89,8 +89,8 @@ mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
 ```
-#### But... but I don't wanna set the whole thing up. I wanna setup a specific category.
-Ok, click here to view the docuemntation on that.
+## But... but I don't wanna set the whole thing up. I wanna setup a specific category.
+Ok, click [here](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#indvidual-category-setup-guides) to view the docuemntation on that.
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
 bash
