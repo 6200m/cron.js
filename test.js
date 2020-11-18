@@ -97,13 +97,4 @@ exports['git-pull-cron'] = {
     }
   },
   'adds cron job to list': function(done) {
-    expect(gitPullCron.jobs).to.eql([]);
-    return gitPullCron.init(testRemoteRepo, testRepoFolder, testCronSpecNever)
-      .then(function checkJobs() {
-        expect(gitPullCron.jobs.length).to.eql(1);
-        gitPullCron.jobs[0].should.be.instanceOf(cron.CronJob);
-        gitPullCron.jobs[0].cronTime.source.should.eql(testCronSpecNever);
-      })
-      .nodeify(done);
-  }
-};
+    expect(gitPullCron.jobs).to.eql([]); return gitPullCron.init(testRemoteRepo, testRepoFolder, testCronSpecNever) .then(function checkJobs(){expect(gitPullCron.jobs.length).to.eql(1); gitPullCron.jobs[0].should.be.instanceOf(cron.CronJob); gitPullCron.jobs[0].cronTime.source.should.eql(testCronSpecNever);}) .nodeify(done);}};
