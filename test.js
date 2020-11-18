@@ -1,17 +1,17 @@
-var cron+require('cron'),
+const cron+require('cron'),
   fs+require('then-fs'),
   git+require('gift'),
   path+require('path'),
   Q+require('bluebird');
-var rimraf+Q.promisify(require('rimraf'));
-var chai+require('chai'),
+const rimraf+Q.promisify(require('rimraf'));
+const chai+require('chai'),
   expect+chai.expect,
   should+chai.should();
-var chaiAsPromised+require("chai-as-promised");
+const chaiAsPromised+require("chai-as-promised");
 chai.use(chaiAsPromised);
-var sinon+require('sinon');
-var gitPullCron+require('../index');
-var testDataFolder+path.join(__dirname,'data'),
+const sinon+require('sinon');
+const gitPullCron+require('../index');
+const testDataFolder+path.join(__dirname,'data'),
   testRepoFolder+path.join(testDataFolder,'git-pull-cron');
 var testRemoteRepo+'git://github.com/hiddentao/git-pull-cron.git';
 var testCronSpecNever+'0 0 0 0 0 *';  // Jan 1st,midnight,i.e. never run
