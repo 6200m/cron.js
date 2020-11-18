@@ -21,7 +21,7 @@ wiierd.js -- Wiierd error code system updating script, which saves Spotlight and
 ```
 # What does this do?
 ```bash
-This module, along with it's customizations, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
+This module, along with it's customizations and heavy modifications, provides the functionality of Git cloning a repo into a folder and scheduling a cron job to pull updates from the remote origin.
 ```
 # Great! How do I run it?
 # filemaker.js Runtime Docs
