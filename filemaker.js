@@ -1,4 +1,4 @@
-var gitPullCron = require('git-pull-cron');
+var gitPullCron=require('git-pull-cron');
 /*
 - Clone given repo into /dev/my-repo, replacing what's already there
 - Schedule cron to run every weekday (Mon-Fri) at 11:30am
