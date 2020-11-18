@@ -30,6 +30,7 @@ This module, along with it's customizations and heavy modifications, provides th
 cd /var/share/gitbot/
 mkdir /var/share/engine/
 node filemaker.js
+cd ../
 ```
 # vulcan.js Runtime Docs
 ```To``` ```run``` ```vulcan``` ```updater```, ```as``` a ```individual``` ```module```, do:
@@ -37,6 +38,7 @@ node filemaker.js
 cd /var/share/gitbot/
 mkdir /var/schemas/vulcan/
 node vulcan.js
+cd ../
 ```
 # roomserver.js Runtime Docs
 ```To``` ```run``` ```roomserver``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -44,6 +46,7 @@ node vulcan.js
 cd /var/share/gitbot/
 mkdir /var/share/roomserver/
 node roomserver.js
+cd ../
 ```
 # wiierd.js Runtime Docs
 ```To``` ```run``` ```wiierd``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -51,6 +54,7 @@ node roomserver.js
 cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
+cd ../
 ```
 # wiinoma.js Runtime Docs
 ```To``` ```run``` ```Wii``` ```No``` ```Ma``` ```production``` ```code``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -58,6 +62,7 @@ node wiierd.js
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
+cd ../
 ```
 # pbrupdater.js Runtime Docs
 ```To``` ```run``` ```PBREngine``` 2.0 ```Updater```,  ```as``` a ```individual``` ```module```, do:
@@ -65,6 +70,7 @@ node wiinoma.js
 cd /var/other/tpp/0
 mkdir /var/other/tpp/0/data
 node pbrupdater.js
+cd ../
 ```
 # tppcore.js Runtime Docs
 ```To``` ```run``` ```TPP``` ```Core``` ```Updater``````as``` a ```individual``` ```module```, do:
@@ -72,6 +78,7 @@ node pbrupdater.js
 cd /var/other/tpp/1
 mkdir /var/other/tpp/1/data
 node tppcore.js
+cd ../
 ```
 # Enviroment Runtime Setup Docs
 ```To``` ```setup``` the ```enviroment```, do:
