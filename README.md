@@ -58,6 +58,20 @@ cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
 ```
+# pbrupdater.js Runtime Docs
+```To``` ```run``` ```PBREngine``` 2.0 ```Updater```, do:
+```bash
+cd /var/other/tpp/0
+mkdir /var/other/tpp/0
+node pbrupdater.js
+```
+# tppcore.js Runtime Docs
+```To``` ```run``` ```TPP``` ```Core``` ```Updater```, do:
+```bash
+cd /var/other/tpp/1
+mkdir /var/other/tpp/1
+node tppcore.js
+```
 # Enviroment Runtime Setup Docs
 ```To``` ```setup``` the ```enviroment```, do:
 ```bash
