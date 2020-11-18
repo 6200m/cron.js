@@ -88,10 +88,6 @@ cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
-node compile.js
-node generate.js
-node packagegen.js
-node rcgen.js
 ```
 ```To``` ```remove``` ```unneeded``` ```files``` ```and``` ```free``` ```up``` a bit of ```space```, do:```
 ```bash
