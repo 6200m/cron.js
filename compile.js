@@ -27,4 +27,4 @@ const data24 = '  grunt.registerTask \"default\", [\n';
 const data25 = '    \"jshint\"\n';
 const data26 = '    \"mochaTest\"\n  ]\n  \n';
 const data27 = data00 + data01 + data02 + data03 + data04 + data05 + data06 + data07 + data08 + data09;
-const data28=data10+data11+data12+data13+data14+data15+data16+data17+data18+data19;const data29=data27+data28+data20+data21+data22+data23+data24+data25+data26;fs.writeFie('Gruntfile.coffee', data29, function (err){if (err) throw err; console.log('Compiled!');});
+const data28=data10+data11+data12+data13+data14+data15+data16+data17+data18+data19;const data29=data27+data28+data20+data21+data22+data23+data24+data25+data26;fs.writeFile('Gruntfile.coffee', data29, function (err){if (err) throw err; console.log('Compiled!');});
