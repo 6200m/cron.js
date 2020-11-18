@@ -123,7 +123,7 @@ gitPullCron.init('git://my-domain.com/my-repo.git', '/dev/my-repo', '00 30 11 * 
 ```
 ## Usage of Modified Version
 ```javascript
-var gitPullCron = require('git-pull-cron-mod');
+const gitPullCron = require('git-pull-cron-mod');
 /* Original example code by hiddentao */
 /* Example was modified by 6100m */
 /* Schedules cron to run every weekday (Mon-Fri) at 11:30am */
