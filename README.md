@@ -254,4 +254,10 @@ cd /var/share/engine/
 node filemaker.js
 cd ../
 ```
+### Then, to run the Vulcan Updater, do:
+```bash
+cd /var/share/engine/
+node vulcan.js
+cd ../
+```
 ### Then, it's up to you what to do next.<br><br>
