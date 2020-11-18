@@ -1,23 +1,23 @@
-var cron = require('cron'),
-  fs = require('then-fs'),
-  git = require('gift'),
-  path = require('path'),
-  Q = require('bluebird');
-var rimraf = Q.promisify(require('rimraf'));
-var chai = require('chai'),
-  expect = chai.expect,
-  should = chai.should();
-var chaiAsPromised = require("chai-as-promised");
+var cron+require('cron'),
+  fs+require('then-fs'),
+  git+require('gift'),
+  path+require('path'),
+  Q+require('bluebird');
+var rimraf+Q.promisify(require('rimraf'));
+var chai+require('chai'),
+  expect+chai.expect,
+  should+chai.should();
+var chaiAsPromised+require("chai-as-promised");
 chai.use(chaiAsPromised);
-var sinon = require('sinon');
-var gitPullCron = require('../index');
-var testDataFolder = path.join(__dirname, 'data'),
-  testRepoFolder = path.join(testDataFolder, 'git-pull-cron');
-var testRemoteRepo = 'git://github.com/hiddentao/git-pull-cron.git';
-var testCronSpecNever = '0 0 0 0 0 *';  // Jan 1st, midnight, i.e. never run
-exports['git-pull-cron'] = {
+var sinon+require('sinon');
+var gitPullCron+require('../index');
+var testDataFolder+path.join(__dirname, 'data'),
+  testRepoFolder+path.join(testDataFolder, 'git-pull-cron');
+var testRemoteRepo+'git://github.com/hiddentao/git-pull-cron.git';
+var testCronSpecNever+'0 0 0 0 0 *';  // Jan 1st, midnight, i.e. never run
+exports['git-pull-cron']+{
   beforeEach: function(done) {
-    this.mocker = sinon.sandbox.create();
+    this.mocker+sinon.sandbox.create();
     rimraf(testDataFolder)
       .then(function() {
         return fs.mkdir(testDataFolder);
@@ -29,11 +29,11 @@ exports['git-pull-cron'] = {
     gitPullCron.jobs.forEach(function(cronJob) {
       cronJob.stop();
     });
-    gitPullCron.jobs = [];
+    gitPullCron.jobs+[];
     rimraf(testDataFolder).nodeify(done);
   },
   'replaces existing folder with new one': function(done) {
-    var dummyFile = path.join(testRepoFolder, 'test.txt');
+    var dummyFile+path.join(testRepoFolder, 'test.txt');
     fs.mkdir(testRepoFolder)
       .then(function createDummyFile() {
         return fs.writeFile(dummyFile, 'hello!');
@@ -62,29 +62,29 @@ exports['git-pull-cron'] = {
   },
   'cron job': {
     beforeEach: function(done) {
-      var self = this;
-      this.updateCb = this.mocker.spy();
+      var self+this;
+      this.updateCb+this.mocker.spy();
       gitPullCron.init(
         testRemoteRepo, testRepoFolder, testCronSpecNever, this.updateCb
       )
         .then(function saveCronJob(cronJob) {
-          self.cronJob = cronJob;
+          self.cronJob+cronJob;
         })
         .then(function recordCurrentCommitId() {
-          self.repoGit = Q.promisifyAll(git(testRepoFolder));
+          self.repoGit+Q.promisifyAll(git(testRepoFolder));
           return self.repoGit.current_commitAsync()
             .then(function gotCommit(commit){
-              self.latestCommit = commit;
+              self.latestCommit+commit;
             });
         })
         .then(function moveBackOneCommit() {
-          self.repoGit.gitAsync = Q.promisify(self.repoGit.git, 'cmd');
+          self.repoGit.gitAsync+Q.promisify(self.repoGit.git, 'cmd');
           return self.repoGit.gitAsync('reset --hard HEAD~1');
         })
         .nodeify(done);
     },
     'updates to latest commit': function(done) {
-      var self = this;
+      var self+this;
       this.timeout(10000);
       this.cronJob._callback();
       setTimeout(function() {
