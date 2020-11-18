@@ -1,14 +1,14 @@
 "use strict";
-var debug = require('debug')('git-pull-cron'),
-  git = require('gift'),
-  CronJob = require('cron').CronJob,
-  Q = require('bluebird'),
-  rimraf = require('rimraf');
+var debug=require('debug')('git-pull-cron'),
+  git=require('gift'),
+  CronJob=require('cron').CronJob,
+  Q=require('bluebird'),
+  rimraf=require('rimraf');
 Q.promisifyAll(git);
 /**
  * The list of initialised cron jobs.
  */
-exports.jobs = [];
+exports.jobs=[];
 /**
  * Clone a git repo at given path and schedule a cron job to pull updates.
  *
@@ -27,22 +27,22 @@ exports.jobs = [];
  *
  * @return {Promise} Resolves to `CronJob` instance.
  */
-exports.init = function(repo, path, cronSpec, updateCb) {
+exports.init=function(repo, path, cronSpec, updateCb) {
   return Q.promisify(rimraf)(path)
     .then(function cloneRepo() {
-      debug('Cloning repository: ' + repo); return git.cloneAsync(repo, path);
+      debug('Cloning repository: '+repo); return git.cloneAsync(repo, path);
     })
     .then(function setupCronJob() {
-      var blogRepo=Q.promisifyAll(git(path)); debug('Creating cron job: ' + cronSpec);
-      var cronJob = new CronJob(cronSpec, function() {
-        debug('CRON: fetching updates for: ' + repo);
+      var blogRepo=Q.promisifyAll(git(path)); debug('Creating cron job: '+cronSpec);
+      var cronJob=new CronJob(cronSpec, function() {
+        debug('CRON: fetching updates for: '+repo);
         blogRepo.remote_fetchAsync('origin')
           .then(function mergeRepo() {
-            debug('CRON: merging updates for: ' + repo);
+            debug('CRON: merging updates for: '+repo);
             return blogRepo.mergeAsync('origin/master');
           })
           .then(function fetchCommits() {
-            debug('CRON: fetching commits for: ' + repo); return blogRepo.current_commitAsync();
+            debug('CRON: fetching commits for: '+repo); return blogRepo.current_commitAsync();
           })
           .then(function gotCommit(commit) {
             if (!commit) {
@@ -51,7 +51,7 @@ exports.init = function(repo, path, cronSpec, updateCb) {
             return commit;
           })
           .then(function allDone(commit) {
-            debug('CRON: updated to commit ' + commit.id + ' for: ' + repo);        
+            debug('CRON: updated to commit '+commit.id+' for: '+repo);        
             if (updateCb) {
               updateCb(null, commit);
             }
