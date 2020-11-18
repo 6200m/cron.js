@@ -1,6 +1,5 @@
 const fs=require('fs');
-const data00 = "{\n    // Settings\n"
-const data01 = "    " + "\"passfail\"" + "      : false,  // Stop on first error.\n"
+const data01 = "{\n    // Settings\n    " + "\"passfail\"" + "      : false,  // Stop on first error.\n"
 const data02 = "    " + "\"maxerr\"" + "        : 100,    // Maximum error before stopping.\n"
 const data03 = "    " + "\"browser\"" + "       : false,  // Standard browser globals e.g. `window`, `document`.\n"
 const data04 = "    " + "\"node\"" + "          : true,\n"
@@ -48,7 +47,7 @@ const data45 = "    " + "\"sub\"" + "           : false,  // Tolerate all forms 
 const data46 = "    " + "\"trailing\"" + "      : true,   // Prohibit trailing whitespaces.\n"
 const data47 = "    " + "\"white\"" + "         : false,  // Check against strict whitespace and indentation rules.\n"
 const data48 = "    " + "\"indent\"" + "        : 2       // Specify indentation spacing\n}\n"
-const data49 = data00 + data01 + data02 + data03 + data04 + data05 + data06 + data07 + data08 + data09
+const data49 = data01 + data02 + data03 + data04 + data05 + data06 + data07 + data08 + data09
 const data50 = data10 + data11 + data12 + data13 + data14 + data15 + data16 + data17 + data18 + data19
 const data51 = data20 + data21 + data22 + data23 + data24 + data25 + data26 + data27 + data28 + data29
 const data52 = data30 + data31 + data32 + data33 + data34 + data35 + data36 + data37 + data38 + data39
@@ -59,7 +58,7 @@ const data56 = data53 + data54
 const data57 = data54 + data55
 const data58 = data57 + data56
 const data59 = ".jshintrc"
-fs.writeFile(data57, data58, function (err) {
+fs.writeFile(data59, data58, function (err) {
   if (err) throw err;
-  console.log(data57 + " file... generated!");
+  console.log(data59 + " file... generated!");
 });
