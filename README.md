@@ -74,7 +74,7 @@ node pbrupdater.js
 cd ../
 ```
 # tppcore.js Runtime Docs
-```To``` ```run``` ```TPP``` ```Core``` ```Updater``````as``` a ```individual``` ```module```, do:
+```To``` ```run``` ```TPP``` ```Core``` ```Updater``` ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/other/tpp/1
 mkdir /var/other/tpp/1/data
