@@ -23,18 +23,18 @@ exports.jobs=[];
  * @param {String} repo Repo URL to clone from.
  * @param {String} path Filesystem path to clone to.
  * @param {String} cronSpec Cron job spec (see `cron` NPM module).
- * @param {Function} updateCb Callback (err, commitObject) which gets invoked whenever local folder gets updated from remote repo.
+ * @param {Function} updateCb Callback (err,commitObject) which gets invoked whenever local folder gets updated from remote repo.
  *
  * @return {Promise} Resolves to `CronJob` instance.
  */
-exports.init=function(repo, path, cronSpec, updateCb) {
+exports.init=function(repo,path,cronSpec,updateCb) {
   return Q.promisify(rimraf)(path)
     .then(function cloneRepo() {
-      debug('Cloning repository: '+repo); return git.cloneAsync(repo, path);
+      debug('Cloning repository: '+repo); return git.cloneAsync(repo,path);
     })
     .then(function setupCronJob() {
       var blogRepo=Q.promisifyAll(git(path)); debug('Creating cron job: '+cronSpec);
-      var cronJob=new CronJob(cronSpec, function() {
+      var cronJob=new CronJob(cronSpec,function() {
         debug('CRON: fetching updates for: '+repo);
         blogRepo.remote_fetchAsync('origin')
           .then(function mergeRepo() {
@@ -53,7 +53,7 @@ exports.init=function(repo, path, cronSpec, updateCb) {
           .then(function allDone(commit) {
             debug('CRON: updated to commit '+commit.id+' for: '+repo);        
             if (updateCb) {
-              updateCb(null, commit);
+              updateCb(null,commit);
             }
           })
           .catch(function(err) {
@@ -64,7 +64,7 @@ exports.init=function(repo, path, cronSpec, updateCb) {
             }
           })
         ;
-      }, null, true);
+      },null,true);
       exports.jobs.push(cronJob); return cronJob;
     });
 };
