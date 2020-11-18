@@ -89,11 +89,6 @@ mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
 ```
-```To``` ```remove``` ```unneeded``` ```files``` ```and``` ```free``` ```up``` a bit of ```space```, do:```
-```bash
-cd /var/share/gitbot/
-node clean.js
-```
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
 bash
