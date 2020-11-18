@@ -56,10 +56,10 @@ const data53 = data40 + data41 + data42 + data43 + data44 + data45 + data46 + da
 const data54 = data49 + data50 
 const data55 = data51 + data52 
 const data56 = data53 + data54
-const data57 = ".jshintrc"
-const data58 = data54 + data55
-const data59 = data58 + data56
-fs.writeFile(data57, data59, function (err) {
+const data57 = data54 + data55
+const data58 = data57 + data56
+const data59 = ".jshintrc"
+fs.writeFile(data57, data58, function (err) {
   if (err) throw err;
   console.log(data57 + " file... generated!");
 });
