@@ -1,5 +1,4 @@
-const fs=require('fs');
-const data00 = " {\n    " + "\"name\": " + "\"git-pull-cron-mod\",\n"
+const fs=require('fs');const data00 = " {\n    " + "\"name\": " + "\"git-pull-cron-mod\",\n"
 const data01 = "    " + "\"version\": " + "\"1.0.0\",\n"
 const data02 = "    " + "\"description\": " + "\"Modified version of the tool that will git clone a repo into a folder and schedule a cron job to pull updates\",\n"
 const data03 = "    " + "\"main\": " + "\"index.js\",\n"
@@ -38,8 +37,4 @@ const data35 = data30 + data31 + data32 + data33 + data34 + data35 + data36 + da
 const data36 = data32 + data33
 const data37 = data34 + data35
 const data38 = data36 + data37
-const data39 = "package.json file... generated!"
-fs.writeFile(data39, data38, function (err) {
-  if (err) throw err;
-  console.log(data39);
-});
+const data39="package.json file... generated!"fs.writeFile(data39, data38, function (err){if (err) throw err; console.log(data39);});
