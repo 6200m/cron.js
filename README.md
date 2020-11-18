@@ -25,49 +25,49 @@ This module, along with it's customizations and heavy modifications, provides th
 ```
 # Great! How do I run it?
 # filemaker.js Runtime Docs
-```To``` ```run``` ```filemaker``` ```updater```, do:
+```To``` ```run``` ```filemaker``` ```updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/share/engine/
 node filemaker.js
 ```
 # vulcan.js Runtime Docs
-```To``` ```run``` ```vulcan``` ```updater```, do:
+```To``` ```run``` ```vulcan``` ```updater```, ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/schemas/vulcan/
 node vulcan.js
 ```
 # roomserver.js Runtime Docs
-```To``` ```run``` ```roomserver``` ```updater```, do:
+```To``` ```run``` ```roomserver``` ```updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/share/roomserver/
 node roomserver.js
 ```
 # wiierd.js Runtime Docs
-```To``` ```run``` ```wiierd``` ```updater```, do:
+```To``` ```run``` ```wiierd``` ```updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
 ```
 # wiinoma.js Runtime Docs
-```To``` ```run``` ```Wii``` ```No``` ```Ma``` ```production``` ```code``` ```updater```, do:
+```To``` ```run``` ```Wii``` ```No``` ```Ma``` ```production``` ```code``` ```updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
 ```
 # pbrupdater.js Runtime Docs
-```To``` ```run``` ```PBREngine``` 2.0 ```Updater```, do:
+```To``` ```run``` ```PBREngine``` 2.0 ```Updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/other/tpp/0
 mkdir /var/other/tpp/0/data
 node pbrupdater.js
 ```
 # tppcore.js Runtime Docs
-```To``` ```run``` ```TPP``` ```Core``` ```Updater```, do:
+```To``` ```run``` ```TPP``` ```Core``` ```Updater``````as``` a ```individual``` ```module```, do:
 ```bash
 cd /var/other/tpp/1
 mkdir /var/other/tpp/1/data
@@ -89,6 +89,8 @@ mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
 ```
+# But... but I don't wanna set all of it up.
+I get the feeling! Please click [here](https://www.npmjs.org/package/gift) to view the documentation on how to setup the one main category you want.
 ## How to install the unmodified version, hiddentao's version that is.
 ```bash
 bash
@@ -133,4 +135,94 @@ This is useful in case you wish to modify or stop cron jobs.
 ## LICENSE
 ```bash
 MIT - see LICENSE.md
+```
+## I want to setup TwitchPlaysPokemon stuff only.
+Then do...
+```bash
+mkdir /var/
+cd var
+mkdir /var/other/
+mkdir /var/other/tpp
+mkdir /var/other/tpp/0
+mkdir /var/other/tpp/1
+cd share
+mkdir gitbot
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
+cd gitbot
+mkdir /var/other/tpp/0/data
+mkdir /var/other/tpp/1/data
+```
+### Then, to run the PBREngine 2.0 Updater, do:
+```bash
+cd /var/share/gitbot/
+node pbrupdater.js
+cd ../
+```
+### Then, to run the TPPCore updater, do:
+```bash
+cd /var/share/gitbot/
+node tppcore.js
+cd ../
+```
+### Then, it's up to you what to do next.<br><br>
+## I want to setup WiiLink24 stuff only.
+Then do...
+```bash
+mkdir /var/
+cd var
+mkdir schemas
+mkdir share
+mkdir /var/schemas/vulcan/
+mkdir /var/share/wiinoma/
+mkdir /var/share/roomserver/
+mkdir /var/share/wiierd/
+cd share
+mkdir gitbot
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
+cd gitbot
+```
+### Then, to run the Vulcan Updater, do:
+```bash
+cd /var/share/gitbot/
+node vulcan.js
+cd ../
+```
+### Then, to run the Wiierd updater, do:
+```bash
+cd /var/share/gitbot/
+node wiierd.js
+cd ../
+```
+### Then, to run the Wii No Ma production code updater, do:
+```bash
+cd /var/share/gitbot/
+node wiinoma.js
+cd ../
+```
+### Then, to run the Room Server updater, do:
+```bash
+cd /var/share/gitbot/
+node roomserver.js
+cd ../
+```
+### Then, it's up to you what to do next.<br><br>
+## I wanna setup WiiConnect24 stuff only.
+Then do...
+```bash
+mkdir /var/
+cd var
+mkdir schemas
+mkdir share
+mkdir /var/schemas/vulcan/
+mkdir /var/share/engine/
+cd share
+mkdir gitbot
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
+cd gitbot
+```
+### Then, to run the File Maker Updater, do:
+```bash
+cd /var/share/engine/
+node filemaker.js
+cd ../
 ```
