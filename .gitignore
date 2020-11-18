@@ -1,6 +1,8 @@
 node_modules	
-test/data
+test/
+test/data/
 Gruntfile.coffee
 package.json
 .npmignore
 .jshintrc
+package-lock.json
