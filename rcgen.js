@@ -56,5 +56,4 @@ const data55=data51+data52
 const data56=data53+data54
 const data57=data54+data55
 const data58=data57+data56
-const data59=".jshintrc"
-fs.writeFile(data59,data58,function (err){if (err) throw err;console.log(data59+" file... generated!");});
+fs.writeFile(".jshintrc",data58,function (err){if (err) throw err;console.log(".jshintrc file... generated!");});
