@@ -168,10 +168,10 @@ Then do...
 ```bash
 mkdir /var/
 cd var
-mkdir /var/other/
-mkdir /var/other/tpp
-mkdir /var/other/tpp/0
-mkdir /var/other/tpp/1
+mkdir other/
+mkdir other/tpp
+mkdir other/tpp/0
+mkdir other/tpp/1
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
@@ -199,10 +199,10 @@ mkdir /var/
 cd var
 mkdir schemas
 mkdir share
-mkdir /var/schemas/vulcan/
-mkdir /var/share/wiinoma/
-mkdir /var/share/roomserver/
-mkdir /var/share/wiierd/
+mkdir schemas/vulcan/
+mkdir share/wiinoma/
+mkdir share/roomserver/
+mkdir share/wiierd/
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
@@ -240,8 +240,8 @@ mkdir /var/
 cd var
 mkdir schemas
 mkdir share
-mkdir /var/schemas/vulcan/
-mkdir /var/share/engine/
+mkdir schemas/vulcan/
+mkdir /share/engine/
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
