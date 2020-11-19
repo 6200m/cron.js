@@ -10,7 +10,7 @@
 - Eightly, ```run``` ```cp -r gitbottemp gitbot/``` ```to``` ```finalize``` the ```module``` ```installation```.
 - Ninthly, ```run``` ```rm -rf gitbottemp/``` ```to``` ```clean``` up ```temporary``` ```files``` from compiling.
 - Then ```to``` ```test``` ```the``` ```functionality```, ```run``` ``node test.js`` ```to``` ```test``` it.<br>
-- Then ```finally```, ```choose``` the ```production``` ```script``` ```you``` ```want``` ```to``` ```run```.<br>
+- Then ```finally```, ```choose``` the ```production``` ```script``` ```you``` ```want``` ```to``` ```run```. while also following it's respective runtime docs and specific category docs if needed as well. Click[```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#great-how-do-i-run-it) to view runtime docs and click [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#but-but-i-dont-wanna-set-the-whole-thing-up-i-wanna-setup-a-specific-category) to view specific category docs.
 - The ```current``` ```ones``` ```we``` have ```made```:<br>
 # Current Scripts
 ```bash
