@@ -30,7 +30,7 @@ This module, along with it's customizations and heavy modifications, provides th
 cd /var/share/gitbot/
 mkdir /var/share/engine/
 node filemaker.js
-cd ../
+cd ../../../
 ```
 # vulcan.js Runtime Docs
 ```To``` ```run``` ```vulcan``` ```updater```, ```as``` a ```individual``` ```module```, do:
@@ -38,7 +38,7 @@ cd ../
 cd /var/share/gitbot/
 mkdir /var/schemas/vulcan/
 node vulcan.js
-cd ../
+cd ../../../
 ```
 # roomserver.js Runtime Docs
 ```To``` ```run``` ```roomserver``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -46,7 +46,7 @@ cd ../
 cd /var/share/gitbot/
 mkdir /var/share/roomserver/
 node roomserver.js
-cd ../
+cd ../../../
 ```
 # wiierd.js Runtime Docs
 ```To``` ```run``` ```wiierd``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -54,7 +54,7 @@ cd ../
 cd /var/share/gitbot/
 mkdir /var/share/wiierd/
 node wiierd.js
-cd ../
+cd ../../../
 ```
 # wiinoma.js Runtime Docs
 ```To``` ```run``` ```Wii``` ```No``` ```Ma``` ```production``` ```code``` ```updater```,  ```as``` a ```individual``` ```module```, do:
@@ -62,7 +62,7 @@ cd ../
 cd /var/share/gitbot/
 mkdir /var/share/wiinoma/
 node wiinoma.js
-cd ../
+cd ../../../
 ```
 # pbrupdater.js Runtime Docs
 ```To``` ```run``` ```PBREngine``` 2.0 ```Updater```,  ```as``` a ```individual``` ```module```, do:
@@ -70,7 +70,7 @@ cd ../
 cd /var/other/tpp/0
 mkdir /var/other/tpp/0/data
 node pbrupdater.js
-cd ../
+cd ../../../
 ```
 # tppcore.js Runtime Docs
 ```To``` ```run``` ```TPP``` ```Core``` ```Updater``` ```as``` a ```individual``` ```module```, do:
@@ -78,7 +78,7 @@ cd ../
 cd /var/other/tpp/1
 mkdir /var/other/tpp/1/data
 node tppcore.js
-cd ../
+cd ../../../
 ```
 # Enviroment Runtime Setup Docs
 ```To``` ```setup``` the ```enviroment```, do:
@@ -183,13 +183,13 @@ cd gitbot
 ```bash
 cd /var/share/gitbot/
 node pbrupdater.js
-cd ../
+cd ../../../
 ```
 ### Then, to run the TPPCore updater, do:
 ```bash
 cd /var/share/gitbot/
 node tppcore.js
-cd ../
+cd ../../../
 ```
 ### Then, it's up to you what to do next.<br><br>
 ## I want to setup WiiLink24 stuff only.
@@ -212,25 +212,25 @@ cd gitbot
 ```bash
 cd /var/share/gitbot/
 node vulcan.js
-cd ../
+cd ../../../
 ```
 ### Then, to run the Wiierd updater, do:
 ```bash
 cd /var/share/gitbot/
 node wiierd.js
-cd ../
+cd ../../../
 ```
 ### Then, to run the Wii No Ma production code updater, do:
 ```bash
 cd /var/share/gitbot/
 node wiinoma.js
-cd ../
+cd ../../../
 ```
 ### Then, to run the Room Server updater, do:
 ```bash
 cd /var/share/gitbot/
 node roomserver.js
-cd ../
+cd ../../../
 ```
 ### Then, it's up to you what to do next.<br><br>
 ## I wanna setup WiiConnect24 stuff only.
@@ -251,12 +251,12 @@ cd gitbot
 ```bash
 cd /var/share/engine/
 node filemaker.js
-cd ../
+cd ../../../
 ```
 ### Then, to run the Vulcan Updater, do:
 ```bash
 cd /var/share/engine/
 node vulcan.js
-cd ../
+cd ../../../
 ```
 ### Then, it's up to you what to do next.<br><br>
