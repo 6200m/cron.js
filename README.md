@@ -241,7 +241,7 @@ cd var
 mkdir schemas
 mkdir share
 mkdir schemas/vulcan/
-mkdir /share/engine/
+mkdir share/engine/
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
