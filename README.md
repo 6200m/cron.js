@@ -172,12 +172,12 @@ mkdir other/
 mkdir other/tpp
 mkdir other/tpp/0
 mkdir other/tpp/1
+mkdir other/tpp/0/data
+mkdir other/tpp/1/data
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
 cd gitbot
-mkdir /var/other/tpp/0/data
-mkdir /var/other/tpp/1/data
 ```
 ### Then, to run the PBREngine 2.0 Updater, do:
 ```bash
