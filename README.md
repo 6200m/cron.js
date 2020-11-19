@@ -67,7 +67,7 @@ cd ../../../
 # pbrupdater.js Runtime Docs
 ```To``` ```run``` ```PBREngine``` 2.0 ```Updater```,  ```as``` a ```individual``` ```module```, do:
 ```bash
-cd /var/other/tpp/0
+cd /var/share/gitbot/
 mkdir /var/other/tpp/0/data
 node pbrupdater.js
 cd ../../../
@@ -75,7 +75,7 @@ cd ../../../
 # tppcore.js Runtime Docs
 ```To``` ```run``` ```TPP``` ```Core``` ```Updater``` ```as``` a ```individual``` ```module```, do:
 ```bash
-cd /var/other/tpp/1
+cd /var/share/gitbot/
 mkdir /var/other/tpp/1/data
 node tppcore.js
 cd ../../../
@@ -249,13 +249,13 @@ cd gitbot
 ```
 ### Then, to run the File Maker Updater, do:
 ```bash
-cd /var/share/engine/
+cd /var/share/gitbot/
 node filemaker.js
 cd ../../../
 ```
 ### Then, to run the Vulcan Updater, do:
 ```bash
-cd /var/share/engine/
+cd /var/share/gitbot/
 node vulcan.js
 cd ../../../
 ```
