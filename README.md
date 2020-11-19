@@ -6,6 +6,9 @@
 - Fourthly, ```run``` ```node packagegen.js``` ```to``` ```generate``` the ```package.json``` ```file```.<br>
 - Fifthly, ```run``` ```node clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your ```installation``` ```up```.<br>
 - Sixthly,```run``` ```npm install``` to ```install``` this ```module```.<br>
+- Seventhly ```run``` ```cp -r gitbottemp gitbot/node-modules/``` to setup the module installation.
+- Eightly, ```run``` ```cp -r gitbottemp gitbot/``` to finalize the module installation.
+- Ninthly, ```run``` ```rm -rf gitbottemp/``` to clean up temporary files from compiling.
 - Then ```to``` ```test``` ```the``` ```functionality```, ```run``` ``node test.js`` ```to``` ```test``` it.<br>
 - Then ```finally```, ```choose``` the ```production``` ```script``` ```you``` ```want``` ```to``` ```run```.<br>
 - The ```current``` ```ones``` ```we``` have ```made```:<br>
@@ -93,8 +96,9 @@ mkdir other/tpp/0
 mkdir other/tpp/1
 cd share
 mkdir gitbot
-git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
-cd gitbot
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
+mkdir gitbot/
+mkdir gitbot/node-modules/
 ```
 ## But... but I don't wanna set the whole thing up. I wanna setup a specific category.
 Ok, ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#indvidual-category-setup-guides) to view the documentation on that.
