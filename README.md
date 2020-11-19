@@ -96,6 +96,7 @@ mkdir other/tpp/0
 mkdir other/tpp/1
 cd share
 mkdir gitbot
+mkdir gitbottemp
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
 mkdir gitbot/
 mkdir gitbot/node-modules/
