@@ -203,6 +203,7 @@ mkdir schemas/vulcan/
 mkdir share/wiinoma/
 mkdir share/roomserver/
 mkdir share/wiierd/
+mkdir share/engine/
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
@@ -232,6 +233,12 @@ cd /var/share/gitbot/
 node roomserver.js
 cd ../../../
 ```
+### Then, to run the File Maker Updater, do:
+```bash
+cd /var/share/gitbot/
+node filemaker.js
+cd ../../../
+```
 ### Then, it's up to you what to do next.<br><br>
 ## I wanna setup WiiConnect24 stuff only.
 Then do...
@@ -259,4 +266,5 @@ cd /var/share/gitbot/
 node vulcan.js
 cd ../../../
 ```
-### Then, it's up to you what to do next.<br><br>
+### Then, it's up to you what to do next.<br>
+<br>
