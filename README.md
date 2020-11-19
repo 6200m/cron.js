@@ -191,7 +191,7 @@ cd /var/share/gitbot/
 node tppcore.js
 cd ../../../
 ```
-### Then, it's up to you what to do next.<br><br>
+Please click [here](https://github.com/WiiLink24-Extensions/cron.js#then-its-up-to-you-what-to-do-next) to view remaining instructions.<br><br>
 ## I want to setup WiiLink24 stuff only.
 Then do...
 ```bash
@@ -239,7 +239,7 @@ cd /var/share/gitbot/
 node filemaker.js
 cd ../../../
 ```
-### Then, it's up to you what to do next.<br><br>
+Please click [here](https://github.com/WiiLink24-Extensions/cron.js#then-its-up-to-you-what-to-do-next) to view remaining instructions.<br><br>
 ## I wanna setup WiiConnect24 stuff only.
 Then do...
 ```bash
