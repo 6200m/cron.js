@@ -7,7 +7,7 @@
 - Fifthly, ```run``` ```node clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your ```installation``` ```up```.<br>
 - Sixthly,```run``` ```npm install``` to ```install``` this ```module```.<br>
 - Then ```to``` ```test``` ```the``` ```functionality```, ```run``` ``node test.js`` ```to``` ```test``` it.<br>
-- Then ```finally```, ```choose``` the production ```script you want to run```.<br>
+- Then ```finally```, ```choose``` the ```production``` ```script``` ```you``` ```want``` ```to``` ```run```.<br>
 - The ```current``` ```ones``` ```we``` have ```made```:<br>
 # Current Scripts
 ```bash
