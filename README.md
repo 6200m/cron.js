@@ -85,12 +85,12 @@ cd ../
 ```bash
 mkdir /var/
 cd var
-mkdir /var/share/
-mkdir /var/schemas/
-mkdir /var/other/
-mkdir /var/other/tpp
-mkdir /var/other/tpp/0
-mkdir /var/other/tpp/1
+mkdir share/
+mkdir schemas/
+mkdir other/
+mkdir other/tpp
+mkdir other/tpp/0
+mkdir other/tpp/1
 cd share
 mkdir gitbot
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
