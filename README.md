@@ -1,5 +1,5 @@
 # How to Compile<br>
-```For``` ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module```, ```follow``` the ```enviroment``` ```setup``` ```guide``` ```inside``` this ```README```  ```and``` ```after``` ```clicking``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#enviroment-runtime-setup-docs) ```and``` ```viewing``` ```it``` ```and``` ```following``` ```it```, ```then``` ```finally``` ```do``` ```the``` ```following```:<br>
+```For``` ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module```, ```follow``` the ```enviroment``` ```setup``` ```guide``` ```inside``` this ```README```  ```and``` ```after``` ```clicking``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#enviroment-runtime-setup-docs) ```and``` ```viewing``` ```it``` ```and``` ```following``` ```it```, ```finally``` ```do``` ```the``` ```following```:<br>
 - Firstly, ```run``` ```node compile.js``` ```to``` ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
 - Secondly, ```run``` ```node generate.js``` ```to``` ```generate``` the ```.npmignore``` ```file```.<br>
 - Thirdly, ```run``` ```node rcgen.js``` ```to``` ```generate``` the ```.jshintrc``` ```file```.<br>
