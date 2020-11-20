@@ -1,3 +1,7 @@
+# Wait!
+Huh?
+## But... but I don't wanna set the whole thing up. I wanna setup a specific category.
+Ok, ```click``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#indvidual-category-setup-guides) to view the documentation on that.
 # How to Compile<br>
 ```For``` ```compiling``` ```WiiLink24's``` ```custom``` ```version```, ```you``` will ```need``` ```to``` ```install``` the ```FS``` ```module```, ```follow``` the ```enviroment``` ```setup``` ```guide``` ```inside``` this ```README```  ```and``` ```after``` ```clicking``` [```here```](https://github.com/WiiLink24-Extensions/cron.js/blob/master/README.md#enviroment-runtime-setup-docs) ```and``` ```viewing``` ```it``` ```and``` ```following``` ```it```, ```finally``` ```do``` ```the``` ```following```:<br>
 - Firstly, ```run``` ```node compile.js``` ```to``` ```generate``` the ```Gruntfile.coffee``` ```file```.<br>
