@@ -6,6 +6,7 @@
 - Fourthly, ```run``` ```node packagegen.js``` ```to``` ```generate``` the ```package.json``` ```file```.<br>
 - Fifthly, ```run``` ```node clean.js``` to ```remove``` ```unneeded```  ```files``` ```to``` ```clean``` your ```installation``` ```up```.<br>
 - Sixthly,```run``` ```npm install``` to ```install``` this ```module```.<br>
+- Seventhly, ```run``` ```cd ../``` ```to``` ```prepare``` ```for``` ```finalization```.
 - Seventhly ```run``` ```cp -r gitbottemp gitbot/node-modules/``` ```to``` ```setup``` the ```module``` ```installation```.
 - Eightly, ```run``` ```cp -r gitbottemp gitbot/``` ```to``` ```finalize``` the ```module``` ```installation```.
 - Ninthly, ```run``` ```rm -rf gitbottemp/``` ```to``` ```clean``` up ```temporary``` ```files``` from compiling.
@@ -181,8 +182,16 @@ mkdir other/tpp/0/data
 mkdir other/tpp/1/data
 cd share
 mkdir gitbot
-git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
-cd gitbot
+mkdir gitbot/
+mkdir gitbot/node-modules/
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
+cd gitbottemp
+npm install
+cd ../
+cp -r gitbottemp gitbot/node-modules/
+cp -r gitbottemp gitbot/
+rm -rf gitbottemp/
+node test.js
 ```
 ### Then, to run the PBREngine 2.0 Updater, do:
 ```bash
@@ -211,8 +220,16 @@ mkdir share/wiierd/
 mkdir share/engine/
 cd share
 mkdir gitbot
-git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
-cd gitbot
+mkdir gitbot/
+mkdir gitbot/node-modules/
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
+cd gitbottemp
+npm install
+cd ../
+cp -r gitbottemp gitbot/node-modules/
+cp -r gitbottemp gitbot/
+rm -rf gitbottemp/
+node test.js
 ```
 ### Then, to run the Vulcan Updater, do:
 ```bash
@@ -256,8 +273,16 @@ mkdir schemas/vulcan/
 mkdir share/engine/
 cd share
 mkdir gitbot
-git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbot/
-cd gitbot
+mkdir gitbot/
+mkdir gitbot/node-modules/
+git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
+cd gitbottemp
+npm install
+cd ../
+cp -r gitbottemp gitbot/node-modules/
+cp -r gitbottemp gitbot/
+rm -rf gitbottemp/
+node test.js
 ```
 ### Then, to run the File Maker Updater, do:
 ```bash
