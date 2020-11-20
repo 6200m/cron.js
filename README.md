@@ -185,7 +185,6 @@ mkdir other/tpp/1
 mkdir other/tpp/0/data
 mkdir other/tpp/1/data
 cd share
-mkdir gitbot
 mkdir gitbot/
 mkdir gitbot/node-modules/
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
@@ -223,7 +222,6 @@ mkdir share/roomserver/
 mkdir share/wiierd/
 mkdir share/engine/
 cd share
-mkdir gitbot
 mkdir gitbot/
 mkdir gitbot/node-modules/
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
@@ -276,7 +274,6 @@ mkdir share
 mkdir schemas/vulcan/
 mkdir share/engine/
 cd share
-mkdir gitbot
 mkdir gitbot/
 mkdir gitbot/node-modules/
 git clone --recursive https://github.com/WiiLink24-Extensions/git-pull-cron gitbottemp/
