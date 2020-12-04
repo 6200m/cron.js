@@ -46,14 +46,5 @@ const data45="    \"sub\"           : false,  // Tolerate all forms of subscript
 const data46="    \"trailing\"      : true,   // Prohibit trailing whitespaces.\n"
 const data47="    \"white\"         : false,  // Check against strict whitespace and indentation rules.\n"
 const data48="    \"indent\"        : 2       // Specify indentation spacing\n}"
-const data49=data01+data02+data03+data04+data05+data06+data07+data08+data09
-const data50=data10+data11+data12+data13+data14+data15+data16+data17+data18+data19
-const data51=data20+data21+data22+data23+data24+data25+data26+data27+data28+data29
-const data52=data30+data31+data32+data33+data34+data35+data36+data37+data38+data39
-const data53=data40+data41+data42+data43+data44+data45+data46+data47+data48
-const data54=data49+data50 
-const data55=data51+data52 
-const data56=data53+data54
-const data57=data54+data55
-const data58=data57+data56
-fs.writeFile(".jshintrc",data58,function (err){if (err) throw err;console.log(".jshintrc file... generated!");});
+const data49=data01+data02+data03+data04+data05+data06+data07+data08+data09+data10+data11+data12+data13+data14+data15+data16+data17+data18+data19+data20+data21+data22+data23+data24+data25+data26+data27+data28+data29+data30+data31+data32+data33+data34+data35+data36+data37+data38+data39data40+data41+data42+data43+data44+data45+data46+data47+data48
+fs.writeFile(".jshintrc",data49,function (err){if (err) throw err;console.log(".jshintrc file... generated!");});
